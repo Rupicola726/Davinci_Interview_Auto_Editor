@@ -1,0 +1,19 @@
+I'll give you transcription of an interview line by line. I want you to make a script for a short video out of it. As an output give me these lines preserving original grammar and punctuation. Also numbers of lines i gave should remain same. For example:
+
+Input:
+
+1) Text of line 1
+2) Text of line 2
+3) Text of line 3
+4) Text of line 4
+5) Text of line 5
+
+Output:
+
+1) Text of Line 1
+3) Text of line 3
+5) Text of line 5
+4) Text of line 4
+
+
+Please, pay close attention to numbering, to make it easier for yourself you can consider numbers of lines baked with the lines itself. Below is the transcription i want you to edit:

@@ -127,7 +127,7 @@ def parse_srt(file_path, stc_total_seconds, stc_frames, frame_rate):
 
 
 def output_to_chat(subtitles,prompt=None):
-    output_Chat_GPT = '\n"prompt"'
+    output_Chat_GPT = f'\n{prompt}'
     for subtitle in subtitles:
         output_Chat_GPT += f'\n{subtitle.repr_text()}'
     print(output_Chat_GPT)
@@ -137,7 +137,8 @@ def output_to_chat(subtitles,prompt=None):
 
 timeline_start_tc = None
 frame_rate = None
-prompt=None
+with open(rf'{os.getcwd()}\prompt.txt') as prompt_path:
+    prompt = prompt_path.read()
 # Set default settings if they're not specified
 if timeline_start_tc is None:
     timeline_start_tc = '01:00:00:00'
@@ -161,4 +162,3 @@ for subtitle in subtitles:
     print(subtitle)
 
 output_to_chat(subtitles,prompt)
-print(os.getcwd())
