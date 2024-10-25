@@ -7,7 +7,7 @@ import sys
 
 
 # Subtitle class to store subtitle number, timecodes, and text
-class Subtitle:
+class SubManager:
     def __init__(self, number, start_time, end_time, start_tc, end_tc, text):
         self.number = number
         self.start_time = start_time
@@ -21,7 +21,7 @@ class Subtitle:
                 f"  {self.start_tc}, {self.end_tc}, {self.text})")
 
     def repr_text(self):
-        return f"{self.number}) {self.text}"
+        return f"{self.number}. {self.text}"
 
 
 def select_file(file_extension):
@@ -99,8 +99,8 @@ def parse_srt(file_path, stc_total_seconds, stc_frames, frame_rate):
             if line.isdigit():
                 if subtitle_number is not None:
                     # Append previous subtitle before moving to the next
-                    subtitles.append(Subtitle(subtitle_number, start_time, end_time, start_fc,
-                                              end_fc, " ".join(subtitle_text)))
+                    subtitles.append(SubManager(subtitle_number, start_time, end_time, start_fc,
+                                                end_fc, " ".join(subtitle_text)))
                 subtitle_number = int(line)
                 subtitle_text = []  # Reset for the next subtitle
 
@@ -120,8 +120,8 @@ def parse_srt(file_path, stc_total_seconds, stc_frames, frame_rate):
 
             # Append the last subtitle after the loop finishes
         if subtitle_number is not None:
-            subtitles.append(Subtitle(subtitle_number, start_time, end_time,
-                                      start_fc, end_fc, " ".join(subtitle_text)))
+            subtitles.append(SubManager(subtitle_number, start_time, end_time,
+                                        start_fc, end_fc, " ".join(subtitle_text)))
 
         return subtitles
 

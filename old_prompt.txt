@@ -1,0 +1,24 @@
+	I'll give you transcription of an interview line by line. I want you to make a script for a short video out of it, don't think of any visuals just try to create core of the story. As an output first print the script you've created preserving original grammar and punctuation, each line you've used should be in a new string. Then give me only numbers of line you used in same order you used them. Each number should be in a new string as well. Also separate parts by printing "<E>". For example:
+
+Input:
+
+1) Text of line 1
+2) Text of line 2
+3) Text of line 3
+4) Text of line 4
+5) Text of line 5
+
+Output:
+
+-Text of line 1
+-Text of line 3
+-Text of line 5
+-Text of line 4
+<E>
+1
+3
+5
+4
+
+
+	Below is the transcription i want you to edit:
