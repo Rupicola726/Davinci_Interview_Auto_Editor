@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="Finished basic parsing and output for ChatGPT">
-      <change afterPath="$PROJECT_DIR$/SubtitleManager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chatGPTmanager.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old_prompt.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/win_os.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Davinci_Auto_Interview_script.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Davinci_Auto_Interview_script.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2024_7_11_PM__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2024_7_11_PM__Changes_.xml" afterDir="false" />
+    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="Refactored SubtitleManager.py and other classes">
+      <change afterPath="$PROJECT_DIR$/test_files/GPT's script.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2024_7_11_PM_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_10_2024_7_11_PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Read_srt.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubManager - Copy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubtitleManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubtitleManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatGPTmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatGPTmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +36,8 @@
 }</component>
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/Rupicola726/Davinci_Auto_Interview_script.git&quot;,
-    &quot;accountId&quot;: &quot;12c3022b-f1c5-4d7f-9fc6-81237ed3a2ea&quot;
+    &quot;url&quot;: &quot;git@github.com:Rupicola726/Davinci_Auto_Interview_script.git&quot;,
+    &quot;accountId&quot;: &quot;ef777cfd-80b5-4415-961c-7114cb534284&quot;
   }
 }</component>
   <component name="ProjectColorInfo">{
@@ -53,18 +49,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Read_srt.executor": "Run",
-    "Python.chatGPTmanager.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/lars_/PycharmProjects/Davinci_Auto_Interview_script/main.py",
-    "settings.editor.selected.configurable": "preferences.toDoOptions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Read_srt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chatGPTmanager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lars_/PycharmProjects/Davinci_Auto_Interview_script/main.py&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lars_\PycharmProjects\Davinci_Auto_Interview_script" />
@@ -119,11 +115,20 @@
       <option name="project" value="LOCAL" />
       <updated>1729275288343</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Refactored SubtitleManager.py and other classes">
+      <option name="closed" value="true" />
+      <created>1729865663655</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1729865663655</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Finished basic parsing and output for ChatGPT" />
-    <option name="LAST_COMMIT_MESSAGE" value="Finished basic parsing and output for ChatGPT" />
+    <MESSAGE value="Refactored SubtitleManager.py and other classes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored SubtitleManager.py and other classes" />
   </component>
 </project>

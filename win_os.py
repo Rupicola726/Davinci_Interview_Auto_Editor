@@ -14,7 +14,7 @@ class WinOS:
         dlg.DoModal()  # Display the file dialog
         file_path = dlg.GetPathName()  # Get the selected file path
         if file_path:
-            print(f"Selected file: {file_path}")
+            print(f"\nSelected file: {file_path}")
             return file_path
         else:
             print('No file selected')

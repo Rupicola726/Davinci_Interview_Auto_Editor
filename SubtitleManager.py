@@ -17,7 +17,10 @@ class Subtitle:
         self.text = text
 
     def __repr__(self):
-        return f"Subtitle({self.number}, {self.start_time}, {self.end_time}, {self.start_tc}, {self.end_tc}, {self.text})"
+        return (f"Subtitle({self.number}, "
+                f"{self.start_time}, {self.end_time}, "
+                f"{self.start_tc}, {self.end_tc}, "
+                f"{self.text})")
 
     def repr_text(self):
         return f"{self.number}. {self.text}"
@@ -62,7 +65,8 @@ class SubManager:
                 line = line.strip()
                 if line.isdigit():
                     if subtitle_number is not None:
-                        self.subtitles.append(Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
+                        self.subtitles.append(
+                            Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
                     subtitle_number = int(line)
                     subtitle_text = []
                 elif '-->' in line:
@@ -75,4 +79,13 @@ class SubManager:
                         clean_line = re.sub(r'<.*?>', '', line)
                         subtitle_text.append(clean_line)
             if subtitle_number is not None:
-                self.subtitles.append(Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
+                self.subtitles.append(
+                    Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
+
+
+""""
+    def sync_subtitles_with_script(self, script_list):
+        old_subs = self.subtitles
+        for line in script_list:
+            
+"""
