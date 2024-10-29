@@ -83,9 +83,16 @@ class SubManager:
                     Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
 
 
-""""
+
+"""
     def sync_subtitles_with_script(self, script_list):
-        old_subs = self.subtitles
+        new_subs_list = []
+        missing_lines = []
         for line in script_list:
-            
+            for sub in self.subtitles:
+                if sub.text == line:
+                    new_subs_list += sub
+                    break
+                if int(sub.number) + 1 ==  len(self.subtitles):
+                    
 """
