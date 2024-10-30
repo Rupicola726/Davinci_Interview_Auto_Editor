@@ -1,20 +1,41 @@
-	I'm going to give you a transcription of an interview, line by line. I want you to make a script for a short video out of it. Don't think of any visuals, just try to create the core of the story. As output, print the script you've created, preserving the original grammar and punctuation, EACH LINE MUST BE IN A NEW STRING STARTING WITH "-", so I can easily find those lines in the transcription during editing. You CAN'T merge lines together< even if sentence is unfinished, leave is as it is. You can only reorder and cut given lines. For example:
+	Task:
+  Make a script for a short video out of text of given to you subtitles.
+-You can only reorder and cut out given subtitles. 
+-You CAN'T write any new text
+-Don't think of any visuals, just try to create the core of the story.
+
+    Input description:
+-I'm going to give you a transcription of an interview, subtitle by subtitle. 
+-Each subtitle consists of two parts separated by ' -- '. Parts are: subtitle's id and subtitle's text.
+
+    Output instructions:
+-Print script you've created as list of subtitles you've used in same order you've used them.
+-WRITE EACH SUBTITLE ON A NEW LINE STARTING WITH DASH (as if a bullet list)
+-Preserve the original grammar and punctuation of subtitle's text.
+-You CAN'T merge lines together, even if sentence is unfinished, leave is as it is.
+
+For example:
 
 Input:
 
-1. Text of line 1
-2. Text of line 2
-3. Text of line 3
-4. Text of line 4
-5. Text of line 5
+At53-558X635 -- Also, finally, I guess and I hope that
+Me39-635X663 -- Manchini will cover the
+pg42-663X704 -- part of the design thing.
+By39-716X736 -- Because I have nobody
+ly43-736X768 -- left. Everybody is busy.
+Wn33-768X775 -- Which design?
+De47-782X811 -- Design for the studio. The
+wn49-811X838 -- wall, the back wall design.
 
 Output:
 
-Text of line 1
-Text of line 3
-Text of line 5
-Text of line 4
+-At53-558X635 -- Also, finally, I guess and I hope that
+-Me39-635X663 -- Manchini will cover the
+-pg42-663X704 -- part of the design thing.
+-Wn33-768X775 -- Which design?
+-De47-782X811 -- Design for the studio. The
+-wn49-811X838 -- wall, the back wall design.
 
+	Below is the transcription I want you to edit:
 
-
-	Below is the transcription i want you to edit:
+"""
