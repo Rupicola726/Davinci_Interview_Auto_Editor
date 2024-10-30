@@ -8,7 +8,8 @@ import sys
 
 # Subtitle class to store subtitle number, timecodes, and text
 class Subtitle:
-    def __init__(self, number, start_time, end_time, start_tc, end_tc, text):
+    def __init__(self, number, sub_id, start_time, end_time, start_tc, end_tc, text):
+        self.id = sub_id
         self.number = number
         self.start_time = start_time
         self.end_time = end_time
@@ -17,13 +18,13 @@ class Subtitle:
         self.text = text
 
     def __repr__(self):
-        return (f"Subtitle({self.number}, "
+        return (f"Subtitle({self.number}, {self.id}, "
                 f"{self.start_time}, {self.end_time}, "
                 f"{self.start_tc}, {self.end_tc}, "
                 f"{self.text})")
 
     def repr_text(self):
-        return f"{self.number}. {self.text}"
+        return f"{self.id} -- {self.text}"
 
 
 class SubManager:
@@ -55,20 +56,38 @@ class SubManager:
         total_frames = int(round(input_total_seconds * self.frame_rate) - self.stc_frames)
         return total_frames
 
+    @staticmethod
+    def id_generator(n, text, start_fc, end_fc):
+        tails = ''
+        for character in text:
+            if character.isalpha():
+                tails += character
+                break
+        for character in text[::-1]:
+            if character.isalpha():
+                tails += character
+                break
+        if tails == '':
+            tails = '~~'
+        id = tails + str(n + len(text)) + '-' + str(start_fc) + 'X' + str(end_fc)
+        return id
+
+
     def parse_srt(self, file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             subtitle_number = None
             start_time = None
             end_time = None
-            subtitle_text = []
+            subtitle_text = ''
             for line in file:
                 line = line.strip()
                 if line.isdigit():
                     if subtitle_number is not None:
+                        sub_id = self.id_generator(subtitle_number, str(subtitle_text), start_fc, end_fc)
                         self.subtitles.append(
-                            Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
+                            Subtitle(subtitle_number, sub_id, start_time, end_time, start_fc, end_fc, subtitle_text))
                     subtitle_number = int(line)
-                    subtitle_text = []
+                    subtitle_text = ''
                 elif '-->' in line:
                     times = line.split(' --> ')
                     start_time, end_time = times
@@ -77,11 +96,11 @@ class SubManager:
                 else:
                     if line:
                         clean_line = re.sub(r'<.*?>', '', line)
-                        subtitle_text.append(clean_line)
+                        subtitle_text = str(clean_line)
             if subtitle_number is not None:
+                sub_id = self.id_generator(subtitle_number, subtitle_text, start_fc, end_fc)
                 self.subtitles.append(
-                    Subtitle(subtitle_number, start_time, end_time, start_fc, end_fc, " ".join(subtitle_text)))
-
+                    Subtitle(subtitle_number, sub_id, start_time, end_time, start_fc, end_fc, subtitle_text))
 
 
 """

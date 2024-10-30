@@ -25,7 +25,8 @@ chat_manager = ChatManager()
 chat_manager.export_to_chat(srt_parser.subtitles)
 # input('Press Enter to paste script from clipboard...')
 script_list = chat_manager.import_from_chat()
-
+for script_line in script_list:
+    print(script_line)
 sub_manager = SubManager()
 
 properties_transfer(srt_parser, sub_manager)
