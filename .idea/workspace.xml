@@ -4,7 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;It's also will make possible verification of imported script and better reordering function later" />
+    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="unfinished sync_subtitles_with_script function">
+      <change afterPath="$PROJECT_DIR$/prompt_V2.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test_files/GPT's script_V1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SubtitleManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubtitleManager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chatGPTmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatGPTmanager.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/old_prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt_V1.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/GPT's script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/GPT's script.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -132,39 +142,7 @@
       <option name="project" value="LOCAL" />
       <updated>1730210543119</updated>
     </task>
-    <task id="LOCAL-00005" summary="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. It's also will make possible verification of imported script and better reordering function">
-      <option name="closed" value="true" />
-      <created>1730297622812</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1730297622812</updated>
-    </task>
-    <task id="LOCAL-00006" summary="new system of id generation&#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. It's also will make possible verification of imported script and better reordering function">
-      <option name="closed" value="true" />
-      <created>1730297759306</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1730297759306</updated>
-    </task>
-    <task id="LOCAL-00007" summary="new system of id generation&#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. &#10;It's also will make possible verification of imported script and better reordering function later">
-      <option name="closed" value="true" />
-      <created>1730297808699</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1730297808699</updated>
-    </task>
-    <task id="LOCAL-00008" summary="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;It's also will make possible verification of imported script and better reordering function later">
-      <option name="closed" value="true" />
-      <created>1730297838365</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1730297838365</updated>
-    </task>
-    <option name="localTasksCounter" value="9" />
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -172,13 +150,6 @@
     <MESSAGE value="Refactored SubtitleManager.py and other classes" />
     <MESSAGE value="script_list from the ChatGPT's script" />
     <MESSAGE value="unfinished sync_subtitles_with_script function" />
-    <MESSAGE value="new system of id generation &#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT by decrypting id. It's also will make possible verification of imported script and better reordering function" />
-    <MESSAGE value="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. It's also will make possible verification of imported script and better reordering function" />
-    <MESSAGE value="new system of id generation&#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. It's also will make possible verification of imported script and better reordering function" />
-    <MESSAGE value="new system of id generation&#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. &#10;It's also will make possible verification of imported script and better reordering function later" />
-    <MESSAGE value="new system of id generation &#10;for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT. &#10;It's also will make possible verification of imported script and better reordering function later" />
-    <MESSAGE value="new system of id generation&#10;new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;It's also will make possible verification of imported script and better reordering function later" />
-    <MESSAGE value="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;It's also will make possible verification of imported script and better reordering function later" />
-    <option name="LAST_COMMIT_MESSAGE" value="new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;It's also will make possible verification of imported script and better reordering function later" />
+    <option name="LAST_COMMIT_MESSAGE" value="unfinished sync_subtitles_with_script function" />
   </component>
 </project>
