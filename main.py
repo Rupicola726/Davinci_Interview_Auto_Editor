@@ -27,7 +27,22 @@ chat_manager.export_to_chat(srt_parser.subtitles)
 script_list = chat_manager.import_from_chat()
 for script_line in script_list:
     print(script_line)
+
 sub_manager = SubManager()
+sub_manager.subtitles, missing_subs, id_mismatch_subs = srt_parser.reorder_to_script(script_list)
 
-properties_transfer(srt_parser, sub_manager)
-
+for subtitle in sub_manager.subtitles:
+    print(subtitle)
+if not missing_subs:
+    print("\n\033[32mNO MISSING SUBS!")
+else:
+    print("\n\033[31mMISSING SUBS:")
+    for sub in missing_subs:
+        print(sub)
+if not id_mismatch_subs:
+    print("\033[32mNO ID MISSMATCH!")
+else:
+    print("\033[31mID MISSMATCH:")
+    for sub in id_mismatch_subs:
+        print(sub)
+print("\033[0m", end="")

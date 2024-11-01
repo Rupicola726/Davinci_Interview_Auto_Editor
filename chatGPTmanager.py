@@ -29,6 +29,7 @@ class ChatManager:
 
     def export_to_chat(self, subtitles):
         self.script = f'\n{self.prompt}'
+        self.script += f'\n"""'
         for subtitle in subtitles:
             self.script += f'\n{subtitle.repr_text()}'
         self.script += f'\n"""'

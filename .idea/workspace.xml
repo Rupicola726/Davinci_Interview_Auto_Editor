@@ -4,16 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="unfinished sync_subtitles_with_script function">
-      <change afterPath="$PROJECT_DIR$/prompt_V2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/test_files/GPT's script_V1.txt" afterDir="false" />
+    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SubtitleManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubtitleManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatGPTmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatGPTmanager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/old_prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt_V1.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/GPT's script.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/GPT's script.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,18 +47,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Python.Read_srt.executor": "Run",
-    "Python.chatGPTmanager.executor": "Run",
-    "Python.main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/lars_/PycharmProjects/Davinci_Auto_Interview_script/test_files",
-    "settings.editor.selected.configurable": "preferences.toDoOptions"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Python.Read_srt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.chatGPTmanager.executor&quot;: &quot;Run&quot;,
+    &quot;Python.main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/lars_/PycharmProjects/Davinci_Auto_Interview_script/test_files&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.toDoOptions&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\lars_\PycharmProjects\Davinci_Auto_Interview_script\test_files" />
@@ -142,7 +138,23 @@
       <option name="project" value="LOCAL" />
       <updated>1730210543119</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later">
+      <option name="closed" value="true" />
+      <created>1730298182933</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1730298182933</updated>
+    </task>
+    <task id="LOCAL-00006" summary="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later">
+      <option name="closed" value="true" />
+      <created>1730298205000</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1730298205000</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,6 +162,8 @@
     <MESSAGE value="Refactored SubtitleManager.py and other classes" />
     <MESSAGE value="script_list from the ChatGPT's script" />
     <MESSAGE value="unfinished sync_subtitles_with_script function" />
-    <option name="LAST_COMMIT_MESSAGE" value="unfinished sync_subtitles_with_script function" />
+    <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
+    <MESSAGE value="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later" />
+    <option name="LAST_COMMIT_MESSAGE" value="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later" />
   </component>
 </project>

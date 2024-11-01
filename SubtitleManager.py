@@ -72,7 +72,6 @@ class SubManager:
         id = tails + str(n + len(text)) + '-' + str(start_fc) + 'X' + str(end_fc)
         return id
 
-
     def parse_srt(self, file_path):
         with open(file_path, 'r', encoding='utf-8') as file:
             subtitle_number = None
@@ -102,16 +101,31 @@ class SubManager:
                 self.subtitles.append(
                     Subtitle(subtitle_number, sub_id, start_time, end_time, start_fc, end_fc, subtitle_text))
 
+    def reorder_to_script(self, ref_list):
+        # Create a dictionary to quickly look up subtitles in sub_list by text
+        sub_dict = {subtitle.id: subtitle for subtitle in self.subtitles}
 
-"""
-    def sync_subtitles_with_script(self, script_list):
-        new_subs_list = []
-        missing_lines = []
-        for line in script_list:
-            for sub in self.subtitles:
-                if sub.text == line:
-                    new_subs_list += sub
-                    break
-                if int(sub.number) + 1 ==  len(self.subtitles):
-                    
-"""
+        # Lists for reordering and tracking issues
+        ordered_subtitles = []
+        missing_subtitles = []
+        wrong_subtitles = []
+
+        # Reorder sub_list to match ref_list and track issues
+        for ref_sub in ref_list:
+            ref_text = ref_sub.text
+            ref_id = ref_sub.id
+
+            if ref_id in sub_dict:
+                sub = sub_dict[ref_id]
+                # Check if text matches ID
+                if sub.text == ref_text:
+                    ordered_subtitles.append(sub)  # Correct match
+                else:
+                    # ID mismatch, add to wrong subtitles
+                    wrong_subtitles.append({"expected": ref_sub, "found": sub})
+            else:
+                # ID not found in sub_list, add to missing subtitles
+                missing_subtitles.append(ref_sub)
+
+        # Return ordered list and issue lists
+        return ordered_subtitles, missing_subtitles, wrong_subtitles
