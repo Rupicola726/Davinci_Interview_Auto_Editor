@@ -23,8 +23,8 @@ for subtitle in srt_parser.subtitles:
 
 chat_manager = ChatManager()
 chat_manager.export_to_chat(srt_parser.subtitles)
-# input('Press Enter to paste script from clipboard...')
-script_list = chat_manager.import_from_chat()
+input('Press Enter to paste script from clipboard...')        # NEED TO ADD CHOICE BETWEEN FILE AND CLIPBOARD IMPORT
+script_list = chat_manager.import_from_chat(True)
 for script_line in script_list:
     print(script_line)
 

@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later">
+    <list default="true" id="d7cbb966-4cf6-48ed-b3c7-5d7d28fa5330" name="Changes" comment="reordering of subs list &#10;-catching missing and wrong subs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubtitleManager.py" beforeDir="false" afterPath="$PROJECT_DIR$/SubtitleManager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chatGPTmanager.py" beforeDir="false" afterPath="$PROJECT_DIR$/chatGPTmanager.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prompt.txt" beforeDir="false" afterPath="$PROJECT_DIR$/prompt.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/win_os.py" beforeDir="false" afterPath="$PROJECT_DIR$/win_os.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -154,7 +153,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730298205000</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="reordering of subs list &#10;-catching missing and wrong subs">
+      <option name="closed" value="true" />
+      <created>1730468964954</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1730468964954</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -164,6 +171,7 @@
     <MESSAGE value="unfinished sync_subtitles_with_script function" />
     <MESSAGE value="Merge remote-tracking branch 'origin/main'&#10;&#10;# Conflicts:&#10;#&#9;.idea/workspace.xml" />
     <MESSAGE value="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later" />
-    <option name="LAST_COMMIT_MESSAGE" value="new system of id generation&#10;&#10;-new system of id generation for each subtitle that allows to get &quot;numbers&quot; of subtitles from chatGPT.&#10;-It's also will make possible verification of imported script and better reordering function later" />
+    <MESSAGE value="reordering of subs list &#10;-catching missing and wrong subs" />
+    <option name="LAST_COMMIT_MESSAGE" value="reordering of subs list &#10;-catching missing and wrong subs" />
   </component>
 </project>

@@ -36,12 +36,15 @@ class ChatManager:
         print(self.script)
         WinOS.clipboard_copy(self.script)
 
-    def import_from_chat(self):
-        with open(WinOS.select_file('.txt')) as file:
-            file = file.read()
-            file_list = (file[1:]).split('\n- ')
-            # separate extraction of first line because it starts without \n
-            self.script_list.append(ScriptLine(file_list[0][1:]))
+    def import_from_chat(self, file_import=False):
+        if file_import:
+            with open(WinOS.select_file('.txt')) as file:
+                file = file.read()
+        else:
+            file = WinOS.clipboard_paste()
+        file_list = (file[1:]).split('\n- ')
+        # separate extraction of first line because it starts without \n
+        self.script_list.append(ScriptLine(file_list[0][1:]))
         for line in file_list[1:]:
             self.script_list.append(
                 ScriptLine(line))

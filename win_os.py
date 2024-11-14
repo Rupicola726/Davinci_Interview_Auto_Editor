@@ -24,3 +24,8 @@ class WinOS:
     def clipboard_copy(text):
         pyperclip.copy(text)
         print("\n\nCopied to clipboard!")
+
+    @staticmethod
+    def clipboard_paste():
+        print("\n\nPasted from clipboard!")
+        return pyperclip.paste()
